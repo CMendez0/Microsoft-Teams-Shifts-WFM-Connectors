@@ -150,7 +150,7 @@
         },
         "gitRepoUrl": {
             "type": "string",
-            "defaultValue": "https://github.com/CarlMendez/Microsoft-Teams-Shifts-WFM-Connectors"
+            "defaultValue": "https://github.com/CMendez0/Microsoft-Teams-Shifts-WFM-Connectors"
         },
         "gitBranch": {
             "type": "string",
