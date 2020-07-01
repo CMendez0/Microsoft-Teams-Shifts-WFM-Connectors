@@ -57,8 +57,8 @@ namespace Microsoft.Teams.App.KronosWfc.Service
             var client = new RestClient("https://dev.api.tjx.com/gies/v1/oauth2/accesstoken?grant_type=client_credentials");
             client.Timeout = -1;
             var request = new RestRequest(Method.POST);
-            //request.AddHeader("Authorization", "Basic Uko4OWR4dXVHODdKT3dBV3JyaGtQR1hKQVVQcmp0Sjk6aFI1ZlJjWkxjZUo2aWw2UQ==");
-            //request.AddParameter("text/plain", "", ParameterType.RequestBody);
+            request.AddHeader("Authorization", "Basic Uko4OWR4dXVHODdKT3dBV3JyaGtQR1hKQVVQcmp0Sjk6aFI1ZlJjWkxjZUo2aWw2UQ==");
+            request.AddParameter("text/plain", "", ParameterType.RequestBody);
             //IRestResponse response = client.Execute(request);
 
             // Console.WriteLine(response.Content);
