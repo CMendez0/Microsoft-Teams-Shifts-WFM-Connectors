@@ -12,8 +12,8 @@ namespace Microsoft.Teams.App.KronosWfc.Service
     using System.Text;
     using System.Threading.Tasks;
     using Microsoft.Teams.App.KronosWfc.Common;
-    using Newtonsoft.Json.Linq;
-    using RestSharp;
+    //using Newtonsoft.Json.Linq;
+    //using RestSharp;
 
     /// <summary>
     /// API helper Class.
