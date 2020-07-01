@@ -150,7 +150,7 @@
         },
         "gitRepoUrl": {
             "type": "string",
-            "defaultValue": "https://github.com/CMendez0/Microsoft-Teams-Shifts-WFM-Connectors"
+            "defaultValue": "https://github.com/CarlMendez/Microsoft-Teams-Shifts-WFM-Connectors"
         },
         "gitBranch": {
             "type": "string",
@@ -191,7 +191,7 @@
         "keyVaultUrl": "[concat('https://', variables('keyVaultName'), '.vault.azure.net/')]"
     },
     "resources": [
-        {
+        /*{
             "type": "Microsoft.Cache/Redis",
             "apiVersion": "2017-10-01",
             "name": "[variables('redisCacheName')]",
@@ -275,7 +275,7 @@
             "properties": {
                 "Application_Type": "web"
             }
-        },
+        },*/
         {
             "type": "Microsoft.Web/sites",
             "apiVersion": "2016-08-01",
@@ -409,7 +409,7 @@
                     ]
                 }
             },
-            "resources": [
+          /*  "resources": [
                 {
                     "apiVersion": "2015-08-01",
                     "name": "web",
@@ -793,7 +793,7 @@
                     }
                 }
             }
-        }
+        }*/
     ],
     "outputs": {
         "outStorageAccntName": {
