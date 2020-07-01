@@ -85,7 +85,7 @@ namespace Microsoft.Teams.App.KronosWfc.Service
                 using (var httpClient = new HttpClient())
                 {
                     
-                    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "FGWwop1SwAQ7z9eEQjou4wcZGxoY");
+                   // httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "FGWwop1SwAQ7z9eEQjou4wcZGxoY");
                     using (var httpContent = new StringContent(xmlString, Encoding.UTF8, "text/xml"))
                     {
                         httpContent.Headers.Add("SOAPAction", ApiConstants.SoapAction);
@@ -99,7 +99,7 @@ namespace Microsoft.Teams.App.KronosWfc.Service
                 {
                     using (var httpClient = new HttpClient(httpClientHandler))
                     {
-                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "FGWwop1SwAQ7z9eEQjou4wcZGxoY");
+                        //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "FGWwop1SwAQ7z9eEQjou4wcZGxoY");
                         using (var httpContent = new StringContent(xmlString, Encoding.UTF8, "text/xml"))
                         {
                             httpContent.Headers.Add("SOAPAction", ApiConstants.SoapAction);
