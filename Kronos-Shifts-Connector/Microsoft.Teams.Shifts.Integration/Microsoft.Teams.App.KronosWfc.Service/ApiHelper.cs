@@ -52,22 +52,22 @@ namespace Microsoft.Teams.App.KronosWfc.Service
         }
 
 
-        private string AuthenticateToken()
-        {
-            var client = new RestClient("https://dev.api.tjx.com/gies/v1/oauth2/accesstoken?grant_type=client_credentials");
-            client.Timeout = -1;
-            var request = new RestRequest(Method.POST);
-            request.AddHeader("Authorization", "Basic Uko4OWR4dXVHODdKT3dBV3JyaGtQR1hKQVVQcmp0Sjk6aFI1ZlJjWkxjZUo2aWw2UQ==");
-            request.AddParameter("text/plain", "", ParameterType.RequestBody);
-            IRestResponse response = client.Execute(request);
+       // private string AuthenticateToken()
+        //{
+          //  var client = new RestClient("https://dev.api.tjx.com/gies/v1/oauth2/accesstoken?grant_type=client_credentials");
+           // client.Timeout = -1;
+            //var request = new RestRequest(Method.POST);
+            //request.AddHeader("Authorization", "Basic Uko4OWR4dXVHODdKT3dBV3JyaGtQR1hKQVVQcmp0Sjk6aFI1ZlJjWkxjZUo2aWw2UQ==");
+            //request.AddParameter("text/plain", "", ParameterType.RequestBody);
+            //IRestResponse response = client.Execute(request);
 
             // Console.WriteLine(response.Content);
 
-            string source = response.Content;
-            dynamic data = JObject.Parse(source);
-            string accessToken = data.access_token;
-            return accessToken;
-        }
+           // string source = response.Content;
+            //dynamic data = JObject.Parse(source);
+            //string accessToken = data.access_token;
+            //return accessToken;
+        //}
 
         /// <summary>
         /// Post XMl request.
@@ -78,7 +78,7 @@ namespace Microsoft.Teams.App.KronosWfc.Service
         /// <returns>Response message.</returns>
         private async Task<HttpResponseMessage> PostXmlRequestAsync(Uri baseUrl, string xmlString, string jSession)
         {
-            var accessToken = this.AuthenticateToken();
+           // var accessToken = this.AuthenticateToken();
             if (string.IsNullOrEmpty(jSession))
             {
                 using (var httpClient = new HttpClient())
