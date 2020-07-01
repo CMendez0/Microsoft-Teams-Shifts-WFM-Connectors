@@ -63,8 +63,8 @@ namespace Microsoft.Teams.App.KronosWfc.Service
 
             // Console.WriteLine(response.Content);
 
-           // string source = response.Content;
-            //dynamic data = JObject.Parse(source);
+            string source = response.Content;
+            dynamic data = JObject.Parse(source);
             //string accessToken = data.access_token;
             string accessToken = "QxsFyrADoTVZBtA8AD5tUIhcGA3k";
             return accessToken;
